@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Deluxe - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Welcome To Blue Lagoon</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet">
@@ -72,7 +72,8 @@
     <section id="section-about" class="ftco-section ftc-no-pb ftc-no-pt">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/bg_2.jpg);">
+					<div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center"
+            <img itemprop="photo" src=".../images/bg_2.jpg" style="background-image: url(images/bg_2.jpg)";>
 					</div>
 					<div class="col-md-7 py-5 wrap-about pb-md-5 ftco-animate">
 	          <div class="heading-section heading-section-wo-line pt-md-5 pl-md-5 mb-5">
@@ -99,7 +100,7 @@
               	</div>
               </div>
               <div class="media-body p-2 mt-2">
-                <h3 class="heading mb-3" itemprop="name">24/7 Front Desk</h3>
+                <h3 class="heading mb-3" itemprop="name">24/7 Front Desk</h3><br>
                 <p itemprop="description">Our Receptionist are always there for you, no matter what you need.</p>
               </div>
             </div>
@@ -112,7 +113,7 @@
               	</div>
               </div>
               <div class="media-body p-2 mt-2">
-                <h3 class="heading mb-3" itemprop="name">Restaurant Bar</h3>
+                <h3 class="heading mb-3" itemprop="name">Restaurant Bar</h3><br>
                 <p itemprop="description">Enjoy our best cuisine with a view of the beach and amazing musics.</p>
               </div>
             </div>
@@ -125,7 +126,7 @@
               	</div>
               </div>
               <div class="media-body p-2 mt-2">
-                <h3 class="heading mb-3" itemprop="name">Transfer Services</h3>
+                <h3 class="heading mb-3" itemprop="name">Transfer Services</h3> <br>
                 <p itemprop="description">Explore your favourite destinations in Bali with our Transfer Service.</p>
               </div>
             </div>
@@ -138,7 +139,7 @@
               	</div>
               </div>
               <div class="media-body p-2 mt-2">
-                <h3 class="heading mb-3" itemprop="name">Spa Suites</h3>
+                <h3 class="heading mb-3" itemprop="name">Spa Suites</h3> <br>
                 <p itemprop="description"> Exhausting day? Relax, rest and recharge at our Spa with a view of the beach.</p>
               </div>
             </div>
@@ -160,7 +161,7 @@
 		          </div>
 		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18 text-center">
-		              <div class="text" itemprop="numberOfRooms"> 
+		              <div class="text" itemprop="numberOfRooms">
 		                <strong class="number" data-number="50">50</strong>
 		                <span>Rooms</span>
 		              </div>
@@ -203,8 +204,11 @@
 		    					</a>
 		    					<div class="text p-3 text-center">
 		    						<h3 class="mb-3"><span itemprop="name" >Suite Room</span></h3>
-		    						<p><span class="price mr-2" itemprop="makesOffer" itemscope itemtype="http://schema.org/Offer"><span itemprop="priceCurrency">IDR</span><span itemprop="price"> 7,500,000</span> <br><span class="per" itemprop="unitCode">per night</span></span></p>
-
+		    						<p><span itemscope itemtype="http://schema.org/Offer">
+                      <span class="price mr-2" itemprop="priceCurrency">IDR</span>
+                      <span class="price mr-2" itemprop="price"> 7,500,000</span> <br>
+                      <span itemscope itemtype="http://schema.org/PriceSpecification">
+                      <span class="per" itemprop="description">per night</span></span></p>
 		    						<hr>
 		    					</div>
 		    				</div>
@@ -218,7 +222,11 @@
 		    					</a>
 		    					<div class="text p-3 text-center">
 		    						<h3 class="mb-3"><span itemprop="name">Family Room</span></h3>
-		    						<p><span class="price mr-2" itemprop="makesOffer" itemscope itemtype="http://schema.org/Offer"><span itemprop="priceCurrency">IDR</span><span itemprop="price"> 5,600,000</span> <br><span class="per" itemprop="unitCode" content="DAY">per night</span></span></p>
+		    						<p><span itemscope itemtype="http://schema.org/Offer">
+                      <span class="price mr-2" itemprop="priceCurrency">IDR</span>
+                      <span class="price mr-2" itemprop="price"> 5,600,000</span> <br>
+                      <span itemscope itemtype="http://schema.org/PriceSpecification">
+                      <span class="per" itemprop="description">per night</span></span></p>
 		    						<hr>
 		    					</div>
 		    				</div>
@@ -231,8 +239,12 @@
 		    						</div>
 		    					</a>
 		    					<div class="text p-3 text-center">
-		    						<h3 class="mb-3"><a href="rooms-single.html">Deluxe Room</a></h3>
-		    						<p><span class="price mr-2">IDR 2,240,000</span> <br><span class="per">per night</span></p>
+		    						<h3 class="mb-3"><span itemprop="name" >Deluxe Room</span></h3>
+                    <p><span itemscope itemtype="http://schema.org/Offer">
+                      <span class="price mr-2" itemprop="priceCurrency" >IDR</span>
+                      <span class="price mr-2" itemprop="price">2,240,000</span> <br>
+                      <span itemscope itemtype="http://schema.org/PriceSpecification">
+                      <span class="per" itemprop="description">per night</span></span></p>
 		    					</div>
 		    				</div>
 		    			</div>
@@ -278,22 +290,22 @@
 	            <p><span>Address:</span><span itemprop="streetAddress"> Jl. Villa Blue Lagoon, Ungasan, Kec. Kuta Sel., Kabupaten Badung, Bali</span> <span itemprop="postalCode">80362</span>, <span itemprop="addressCountry">Indonesia</span></p>
 	          </div>
           </div>
-          <div class="col-md-3 d-flex">
+          <div class="col-md-3 d-flex" >
           	<div class="info bg-white p-4">
 	            <p><span>Phone:</span> <br>
-                <span itemprop="telephone">+ 62 361 8723100</span></p>
+                <span itemprop="telephone" content="+623618723100"> +62 361 8723100 </span></p>
 	          </div>
           </div>
-          <div class="col-md-3 d-flex">
+          <div class="col-md-3 d-flex" >
           	<div class="info bg-white p-4">
 	            <p><span>Email:</span> <br>
-                <span itemprop="email">info@bluelagoon.com</span></p>
+                <span itemprop="email" content="info@bluelagoon.com">info@bluelagoon.com</span></p>
 	          </div>
           </div>
           <div class="col-md-3 d-flex">
           	<div class="info bg-white p-4">
 	            <p><span>Website:</span><br>
-                <span itemprop="url">bluelagoonbali.com</span></p>
+                <span itemprop="url" content="bluelagoonbali.com">bluelagoonbali.com</span></p>
 	          </div>
           </div>
         </div>
