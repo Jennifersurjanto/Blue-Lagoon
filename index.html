@@ -113,8 +113,8 @@
               	</div>
               </div>
               <div class="media-body p-2 mt-2">
-                <h3 class="heading mb-3">24/7 Front Desk</h3>
-                <p>Our Receptionist are always there for you, no matter what you need.</p>
+                <h3 class="heading mb-3" itemprop="name">24/7 Front Desk</h3>
+                <p itemprop="description">Our Receptionist are always there for you, no matter what you need.</p>
               </div>
             </div>
           </div>
@@ -126,8 +126,8 @@
               	</div>
               </div>
               <div class="media-body p-2 mt-2">
-                <h3 class="heading mb-3">Restaurant Bar</h3>
-                <p>Enjoy our best cuisine with a view of the beach and amazing musics.</p>
+                <h3 class="heading mb-3" itemprop="name">Restaurant Bar</h3>
+                <p itemprop="description">Enjoy our best cuisine with a view of the beach and amazing musics.</p>
               </div>
             </div>
           </div>
@@ -139,8 +139,8 @@
               	</div>
               </div>
               <div class="media-body p-2 mt-2">
-                <h3 class="heading mb-3">Transfer Services</h3>
-                <p>Explore your favourite destinations in Bali with our Transfer Service.</p>
+                <h3 class="heading mb-3" itemprop="name">Transfer Services</h3>
+                <p itemprop="description">Explore your favourite destinations in Bali with our Transfer Service.</p>
               </div>
             </div>
           </div>
@@ -152,8 +152,8 @@
               	</div>
               </div>
               <div class="media-body p-2 mt-2">
-                <h3 class="heading mb-3">Spa Suites</h3>
-                <p> Exhausting day? Relax, rest and recharge at our Spa with a view of the beach.</p>
+                <h3 class="heading mb-3" itemprop="name">Spa Suites</h3>
+                <p itemprop="description"> Exhausting day? Relax, rest and recharge at our Spa with a view of the beach.</p>
               </div>
             </div>
           </div>
@@ -167,23 +167,23 @@
 		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18 text-center">
 		              <div class="text">
-		                <strong class="number" data-number="1250">0</strong>
+		                <strong class="number" data-number="1250">1250</strong>
 		                <span>Happy Guests</span>
 		              </div>
 		            </div>
 		          </div>
 		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18 text-center">
-		              <div class="text">
-		                <strong class="number" data-number="50">0</strong>
+		              <div class="text" itemprop="numberOfRooms"> 
+		                <strong class="number" data-number="50">50</strong>
 		                <span>Rooms</span>
 		              </div>
 		            </div>
 		          </div>
 		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18 text-center">
-		              <div class="text">
-		                <strong class="number" data-number="45">0</strong>
+		              <div class="text" itemprop="numberOfEmployees">
+		                <strong class="number" data-number="45">45</strong>
 		                <span>Staffs</span>
 		              </div>
 		            </div>
@@ -191,7 +191,7 @@
 		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18 text-center">
 		              <div class="text">
-		                <strong class="number" data-number="100">0</strong>
+		                <strong class="number" data-number="100">100</strong>
 		                <span>Destination</span>
 		              </div>
 		            </div>
@@ -208,7 +208,7 @@
 			<h1 class="mb-4 bread">Rooms</h1>
     		<div class="row">
 	        <div class="col-lg-9">
-		    		<div class="row">
+		    		<div class="row" itemprop="containsPlace" itemscope itemtype="http://schema.org/HotelRoom">
 		    			<div class="col-sm col-md-6 col-lg-4 ftco-animate">
 		    				<div class="room">
 		    					<a href="rooms-single.html" class="img d-flex justify-content-center align-items-center" style="background-image: url(images/room-1.jpg);">
@@ -217,8 +217,8 @@
 		    						</div>
 		    					</a>
 		    					<div class="text p-3 text-center">
-		    						<h3 class="mb-3"><a href="rooms-single.html">Suite Room</a></h3>
-		    						<p><span class="price mr-2">IDR 7,500,000</span> <br><span class="per">per night</span></p>
+		    						<h3 class="mb-3"><span itemprop="name" >Suite Room</span></h3>
+		    						<p><span class="price mr-2" itemprop="makesOffer" itemscope itemtype="http://schema.org/Offer"><span itemprop="priceCurrency">IDR</span><span itemprop="price"> 7,500,000</span></span> <span class="per" itemprop="unitCode" content="per night">per night</span></p>
 
 		    						<hr>
 		    					</div>
@@ -233,7 +233,7 @@
 		    					</a>
 		    					<div class="text p-3 text-center">
 		    						<h3 class="mb-3"><a href="rooms-single.html">Family Room</a></h3>
-		    						<p><span class="price mr-2">IDR 5,600,000</span> <br><span class="per">per night</span></p>
+		    						<p><span class="price mr-2">IDR 5,600,000</span> <br><span class="per" itemprop="unitCode" content="DAY">per night</span></p>
 		    						<hr>
 		    					</div>
 		    				</div>
@@ -291,8 +291,8 @@
           </div>
           <div class="w-100"></div>
           <div class="col-md-3 d-flex">
-          	<div class="info bg-white p-4">
-	            <p><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Address:</span><span itemprop="streetAddress"> Jl. Villa Blue Lagoon, Ungasan, Kec. Kuta Sel., Kabupaten Badung, Bali</span> <span itemprop="postalCode">80362</span>, <span itemprop="addressCountry">Indonesia</span></p>
+          	<div class="info bg-white p-4" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+	            <p><span>Address:</span><span itemprop="streetAddress"> Jl. Villa Blue Lagoon, Ungasan, Kec. Kuta Sel., Kabupaten Badung, Bali</span> <span itemprop="postalCode">80362</span>, <span itemprop="addressCountry">Indonesia</span></p>
 	          </div>
           </div>
           <div class="col-md-3 d-flex">
