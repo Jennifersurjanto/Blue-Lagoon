@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body itemscope itemtype="http://schema.org/Hotel">
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" itemprop="foundingDate" content="23.10.2019">
 	    <div class="container" >
 	      <a href="index.html"><img itemprop="logo" src="images/Blue-Lagoon-Logo.png" alt="Blue Lagoon Logo" style="height:200px"></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-						<li class="nav-item"><a href="#section-about" class="nav-link">About</a></li>
+						<li class="nav-item"><a href="#section-about"  class="nav-link">About</a></li>
 	          <li class="nav-item"><a href="#section-rooms" class="nav-link">Rooms</a></li>
 	          <li class="nav-item"><a href="#section-restaurant" class="nav-link">Restaurant</a></li>
 	          <li class="nav-item"><a href="#section-contact" class="nav-link">Contact</a></li>
@@ -205,11 +205,9 @@
 		    					<div class="text p-3 text-center">
 		    						<h3 class="mb-3"><span itemprop="name" >Suite Room</span></h3>
 		    						<p><span itemscope itemtype="http://schema.org/Offer">
-                      <span class="price mr-2" itemprop="priceCurrency">IDR</span>
-                      <span class="price mr-2" itemprop="price"> 7,500,000</span> <br>
+                      <span class="price mr-2" itemprop="priceCurrency">IDR <span class="price mr-2" itemprop="price"> 7,500,000</span></span><br>
                       <span itemscope itemtype="http://schema.org/PriceSpecification">
                       <span class="per" itemprop="description">per night</span></span></p>
-		    						<hr>
 		    					</div>
 		    				</div>
 		    			</div>
@@ -223,11 +221,9 @@
 		    					<div class="text p-3 text-center">
 		    						<h3 class="mb-3"><span itemprop="name">Family Room</span></h3>
 		    						<p><span itemscope itemtype="http://schema.org/Offer">
-                      <span class="price mr-2" itemprop="priceCurrency">IDR</span>
-                      <span class="price mr-2" itemprop="price"> 5,600,000</span> <br>
+                      <span class="price mr-2" itemprop="priceCurrency">IDR <span class="price mr-2" itemprop="price"> 5,600,000</span></span><br>
                       <span itemscope itemtype="http://schema.org/PriceSpecification">
                       <span class="per" itemprop="description">per night</span></span></p>
-		    						<hr>
 		    					</div>
 		    				</div>
 		    			</div>
@@ -241,8 +237,7 @@
 		    					<div class="text p-3 text-center">
 		    						<h3 class="mb-3"><span itemprop="name" >Deluxe Room</span></h3>
                     <p><span itemscope itemtype="http://schema.org/Offer">
-                      <span class="price mr-2" itemprop="priceCurrency" >IDR</span>
-                      <span class="price mr-2" itemprop="price">2,240,000</span> <br>
+                      <span class="price mr-2" itemprop="priceCurrency" >IDR<span class="price mr-2" itemprop="price"> 2,240,000</span></span><br>
                       <span itemscope itemtype="http://schema.org/PriceSpecification">
                       <span class="per" itemprop="description">per night</span></span></p>
 		    					</div>
@@ -255,7 +250,7 @@
     </section>
 		<br>
 		<!-- RESTAURANT -->
-		<section id="section-restaurant" class="ftco-section ftc-no-pb ftc-no-pt">
+		<section id="section-restaurant" class="ftco-section ftc-no-pb ftc-no-pt" itemprop="department" itemscope itemtype="http://schema.org/Restaurant">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-5 p-md-5 img img-2 img-3 d-flex justify-content-center align-items-center" style="background-image: url(images/about.jpg);">
@@ -263,7 +258,13 @@
 					<div class="col-md-7 py-5 wrap-about pb-md-5 ftco-animate">
 	          <div class="heading-section heading-section-wo-line pt-md-4 mb-5">
 	          	<div class="ml-md-0">
-		          	<span class="subheading">Our Restaurants</span>
+		          	<span class="subheading" itemprop="name">Restaurant Bar</span>
+                <span itemprop="priceRange" content="$$"></span>
+                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                  <span itemprop="streetAddress" content="Jl. Villa Blue Lagoon, Ungasan, Kec. Kuta Sel., Kabupaten Badung, Bali"></span>
+                  <span itemprop="postalCode" content="80362"></span>
+                  <span itemprop="addressCountry" content="Indonesia"></span>
+                </span>
 		            <h2 class="mb-4">We Are Food Lover</h2>
 	            </div>
 	          </div>
@@ -271,10 +272,54 @@
 							<p>Blue Lagoon offers a various types of cuisine inspired by our favourite European and Asian dishes. The cuisine in Blue Lagoon is made from fresh ingredients and cooked by our greatest chefs. We also have a restaurant with a beach view, a beach club, and a pool lounge. Each of them has their own way to please you.</p>
 							<!-- <p class="pl-md-5"> </p> -->
 							<!-- <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p> -->
-						</div>
+              <span>Phone number for reservations:</span><span itemprop="telephone" content="+623618723199"> +62 361 87231-99 </span>
+            </div>
 					</div>
 				</div>
 			</div>
+      <br>
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h2>Our Menu</h2>
+          </div>
+          <br><br><br><br>
+         <div class="row" itemprop="hasMenu" itemscope itemtype="http://schema.org/Menu">
+          <div itemprop="hasMenuItem" itemscope itemtype="http://schema.org/MenuItem">
+        <div class="row">
+        	<div class="col-md-6" >
+        		<div class="pricing-entry d-flex ftco-animate">
+        			<div class="img" itemprop="photo" style="background-image: url(images/menu-1.jpg);"></div>
+        			<div class="desc pl-3">
+	        			<div class="d-flex text align-items-center">
+	        				<h3><span itemprop="name">Blueberry Cheesecake</span></h3>
+	        				<span class="price" style="font-size:19px">IDR 50K</span>
+	        			</div>
+	        			<div class="d-block">
+	        				<p itemprop="description">Fresh baked Cheesecake to please body and soul.</p>
+	        			</div>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="col-md-6">
+        		<div class="pricing-entry d-flex ftco-animate">
+        			<div class="img" style="background-image: url(images/menu-6.jpg);"></div>
+        			<div class="desc pl-3">
+	        			<div class="d-flex text align-items-center">
+	        				<h3><span itemprop="name">Ravioli Marinara</span></h3>
+	        				<span class="price" style="font-size:19px">IDR 225K</span>
+	        			</div>
+	        			<div class="d-block">
+	        				<p itemprop="description">Enjoy simplicity in it's purest form.</p>
+	        			</div>
+	        		</div>
+        		</div>
+        	</div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
 		</section>
 		<br>
 		<!-- CONTACT -->
@@ -287,13 +332,14 @@
           <div class="w-100"></div>
           <div class="col-md-3 d-flex">
           	<div class="info bg-white p-4" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-	            <p><span>Address:</span><span itemprop="streetAddress"> Jl. Villa Blue Lagoon, Ungasan, Kec. Kuta Sel., Kabupaten Badung, Bali</span> <span itemprop="postalCode">80362</span>, <span itemprop="addressCountry">Indonesia</span></p>
+	            <p><span>Address:</span><span itemprop="streetAddress"> <br>
+                Jl. Villa Blue Lagoon, Ungasan, Kec. Kuta Sel., Kabupaten Badung, Bali</span><span itemprop="postalCode">80362</span>, <span itemprop="addressCountry">Indonesia</span></p>
 	          </div>
           </div>
           <div class="col-md-3 d-flex" >
           	<div class="info bg-white p-4">
 	            <p><span>Phone:</span> <br>
-                <span itemprop="telephone" content="+623618723100"> +62 361 8723100 </span></p>
+                <span itemprop="telephone" content="+623618723100"> +62 361 87231-00 </span></p>
 	          </div>
           </div>
           <div class="col-md-3 d-flex" >
@@ -309,6 +355,11 @@
 	          </div>
           </div>
         </div>
+          <div class="info bg-white p-4">
+            <p><span>You want to know where you can find our Hotel?</span>
+              <a itemprop="hasMap" href="https://goo.gl/maps/iW2qmLAHWJ5Zo9cHA"> Click here for a map.</a>
+          </div>
+          <br>
       </div>
     </section>
     <br>
@@ -318,6 +369,7 @@
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2" itemprop="name">Blue Lagoon</h2>
+
               <p>Luxury resort with direct access to a stunning beach</p>
             </div>
           </div>
@@ -339,6 +391,8 @@
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
   Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+              <p itemprop="legalName">Blue Lagune PT PMA</p>
+              <p itemprop="taxID">NPWP: 12.345.678.9-101112.131415</p>
           </div>
         </div>
       </div>
