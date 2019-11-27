@@ -22,7 +22,7 @@
   <body itemscope itemtype="http://schema.org/Hotel">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" itemprop="foundingDate" content="23.10.2019">
 	    <div class="container" >
-	      <a href="index.html"><img itemprop="logo" src="images/Blue-Lagoon-Logo.png" alt="Blue Lagoon Logo" style="height:180px"></a>
+	      <a href="index.html"><img itemprop="logo" src="images/Blue-Lagoon-Logo.png" alt="Blue Lagoon Logo" style="height:150px"></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -72,8 +72,8 @@
     <section id="section-about" class="ftco-section ftc-no-pb ftc-no-pt">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center"
-            <img itemprop="photo" src=".../images/bg_2.jpg" style="background-image: url(images/bg_2.jpg)";>
+					<div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center">
+            <img itemprop="photo" class="col-md-12 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="height:450px" src="images/bg_2.jpg">
 					</div>
 					<div class="col-md-7 py-5 wrap-about pb-md-5 ftco-animate">
 	          <div class="heading-section heading-section-wo-line pt-md-5 pl-md-5 mb-5">
@@ -184,12 +184,13 @@
 		            </div>
 		          </div>
 		        </div>
+						<span id="section-rooms"></span>
 	        </div>
         </div>
     	</div>
 		</section>
 		<!-- ROOMS -->
-		<section id="section-rooms" class="ftco-section bg-light" >
+		<section  class="ftco-section bg-light" >
     	<div class="container">
 			<h1 class="mb-4 bread"><center>Rooms</center></h1>
     		<div class="row">
@@ -246,7 +247,7 @@
           <div class="col-md-8 ftco-animate">
           	<div class="row ftco-animate">
 		          <div class="col-md-12">
-		            <div class="carousel-testimony owl-carousel ftco-owl">
+		            <div class="carousel-testimony owl-carousel ftco-owl" itemprop="review" itemscope itemtype="http://schema.org/Review">
 		              <div class="item">
 		                <div class="testimony-wrap py-4 pb-5">
 		                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
@@ -255,9 +256,9 @@
 		                    </span>
 		                  </div>
 		                  <div class="text text-center">
-		                    <p class="mb-4">I had one of the best time of my life here in Blue Lagoon. Everything was extraordinary. The resort, the food, the beach, the service, all of them were amazing. My wife and I are planning to go to Bali again and we are absolutely going to stay in Blue Lagoon. You will have the best time here and you will not regret it!</p>
-		                    <p> Rating : 4.5/5 </p>
-												<p class="name">Aaron Smith</p>
+		                    <p class="mb-4" itemprop="description">I had one of the best time of my life here in Blue Lagoon. Everything was extraordinary. The resort, the food, the beach, the service, all of them were amazing. My wife and I are planning to go to Bali again and we are absolutely going to stay in Blue Lagoon. You will have the best time here and you will not regret it!</p>
+		                    <p itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating"> Rating : <span itemprop="ratingValue">4.5</span>/<span itemprop="bestRating">5</span></p>
+												<p class="name" itemprop="author">Aaron Smith</p>
 		                    <span class="position">United Kingdom</span>
 		                  </div>
 		                </div>
@@ -295,13 +296,15 @@
 		            </div>
 		          </div>
 		        </div>
+						<br>
+						<span id="section-restaurant"></span>
           </div>
         </div>
       </div>
     </section> 
 		<br>
 		<!-- RESTAURANT -->
-		<section id="section-restaurant" class="ftco-section ftc-no-pb ftc-no-pt" itemprop="department" itemscope itemtype="http://schema.org/Restaurant">
+		<section  class="ftco-section ftc-no-pb ftc-no-pt" itemprop="department" itemscope itemtype="http://schema.org/Restaurant">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-5 p-md-5 img img-2 img-3 d-flex justify-content-center align-items-center" itemprop="image" style="background-image: url(images/about.jpg);">
@@ -310,7 +313,7 @@
 	          <div class="heading-section heading-section-wo-line pt-md-4 mb-5">
 	          	<div class="ml-md-0">
 		          	<span class="subheading" itemprop="name">Restaurant Bar</span>
-                <span itemprop="priceRange" content="$$"></span>
+                <span itemprop="priceRange" content="$$"> </span>
                 <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                   <span itemprop="streetAddress" content="Jl. Villa Blue Lagoon, Ungasan, Kec. Kuta Sel., Kabupaten Badung, Bali"></span>
                   <span itemprop="postalCode" content="80362"></span>
@@ -340,7 +343,7 @@
         <div class="row">
         	<div class="col-md-6" >
         		<div class="pricing-entry d-flex ftco-animate">
-        			<div class="img" itemprop="photo" style="background-image: url(images/menu-1.jpg);"></div>
+        			<img itemprop="photo" src="images/menu-1.jpg" style="background-image: url(images/menu-1.jpg);"></div>
         			<div class="desc pl-3">
 	        			<div class="d-flex text align-items-center">
 	        				<h3><span itemprop="name">Blueberry Cheesecake</span></h3>
