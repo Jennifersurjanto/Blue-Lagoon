@@ -22,7 +22,7 @@
   <body itemscope itemtype="http://schema.org/Hotel">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" itemprop="foundingDate" content="23.10.2019">
 	    <div class="container" >
-	      <a href="index.html"><img itemprop="logo" src="images/Blue-Lagoon-Logo.png" alt="Blue Lagoon Logo" style="height:150px"></a>
+	      <a href="index.html"><img itemprop="logo" src="images/Blue-Lagoon-Logo.png" alt="Blue Lagoon Logo" style="height:140px"></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -63,13 +63,13 @@
 	            <h2>Join With Us</h2>
             </div>
           </div>
-        </div>
+        </div><span id="section-about"></span>
         </div>
       </div>
     </section>
 		<br>
 		<!-- ABOUT -->
-    <section id="section-about" class="ftco-section ftc-no-pb ftc-no-pt">
+    <section class="ftco-section ftc-no-pb ftc-no-pt">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center"
@@ -240,7 +240,8 @@
 		    </div>
     	</div>
     </section>
-		
+
+		<!-- Rating -->
 		 <section class="ftco-section testimony-section bg-light">
       <div class="container">
         <div class="row justify-content-center">
@@ -255,12 +256,11 @@
 		                      <i class="icon-quote-left"></i>
 		                    </span>
 		                  </div>
-		                  <div class="text text-center">
-		                    <p class="mb-4" itemprop="description">I had one of the best time of my life here in Blue Lagoon. Everything was extraordinary. The resort, the food, the beach, the service, all of them were amazing. My wife and I are planning to go to Bali again and we are absolutely going to stay in Blue Lagoon. You will have the best time here and you will not regret it!</p>
-		                    <p itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating"> Rating : <span itemprop="ratingValue">4.5</span>/<span itemprop="bestRating">5</span></p>
-												<p class="name" itemprop="author">Aaron Smith</p>
-		                    <span class="position">United Kingdom</span>
-		                  </div>
+											<div class="text text-center" itemprop="starRating" itemscope itemtype="http://schema.org/Rating">
+                        <p class="name" itemprop="Author">Aaron Smith</p>
+                        <p class="rating" itemprop="ratingValue" content="5">★★★★★</p>
+    		                <p class="mb-4" itemprop="description">I had one of the best time of my life here in Blue Lagoon. Everything was extraordinary. The resort, the food, the beach, the service, all of them were amazing. My wife and I are planning to go to Bali again and we are absolutely going to stay in Blue Lagoon. You will have the best time here and you will not regret it!</p>
+    		              </div>
 		                </div>
 		              </div>
 		              <div class="item">
@@ -270,47 +270,14 @@
 		                      <i class="icon-quote-left"></i>
 		                    </span>
 		                  </div>
-		                  <div class="text text-center">
-		                    <p class="mb-4">Stayed for 4 nights here and wouldn't hesitate to come back. The staff went above and beyond to make us comfortable and were really helpful.</p>
-		                    <p> Rating : 4/5 </p>
-												<p class="name">Roberto Pieri</p>
-		                    <span class="position">Italy</span>
-		                  </div>
+											<div class="text text-center" itemprop="starRating" itemscope itemtype="http://schema.org/Rating">
+                        <p class="name" itemprop="Author">Roberto Pieri</p>
+                        <p class="rating" itemprop="ratingValue" content="4">★★★★☆</p>
+    		                <p class="mb-4" itemprop="description">Stayed for 4 nights here and wouldn't hesitate to come back. The staff went above and beyond to make us comfortable and were really helpful.</p>
+    		              </div>
 		                </div>
 		              </div>
-		              <div class="item">
-		                <div class="testimony-wrap py-4 pb-5">
-		                  <div class="user-img mb-4" style="background-image: url(images/person_3.jpg)">
-		                    <span class="quote d-flex align-items-center justify-content-center">
-		                      <i class="icon-quote-left"></i>
-		                    </span>
-		                  </div>
-		                  <div class="text text-center">
-		                    <p class="mb-4">Everything about this hotel is 5 star, from the warm arrival with a friendly greeting and welcome drink to the gorgeous pool and lounge area to the amazing villas and rooms.</p>
-		                    <p> Rating : 5/5 </p>
-												<p class="name">Alex Wood</p>
-		                    <span class="position">Ireland</span>
-		                  </div>
-		                </div>
-		              </div>
-		            </div>
-		          </div>
-		        </div>
-						<br>
-						<span id="section-restaurant"></span>
-          </div>
-        </div>
-      </div>
-    </section> 
-		<br>
-<!-- Rating -->
-        <section class="ftco-section testimony-section bg-light">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-md-8 ftco-animate">
-              	<div class="row ftco-animate">
-    		          <div class="col-md-12">
-    		              <div class="item">
+									<div class="item">
     		                <div class="testimony-wrap py-4 pb-5">
     		                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
     		                    <span class="quote d-flex align-items-center justify-content-center">
@@ -323,15 +290,31 @@
     		                    <p class="mb-4" itemprop="description">I really loved to calm down at Blue Lagoon Bali. It's the perfect place to enjoy wellness-services without gettin interrupted by business calls.</p>
     		                  </div>
     		                </div>
-    		              </div>
-    		            </div>
     		          </div>
-    		        </div>
-              </div>
-            </div>
+		              <div class="item">
+		                <div class="testimony-wrap py-4 pb-5">
+		                  <div class="user-img mb-4" style="background-image: url(images/person_4.jpg)">
+		                    <span class="quote d-flex align-items-center justify-content-center">
+		                      <i class="icon-quote-left"></i>
+		                    </span>
+		                  </div>
+											<div class="text text-center" itemprop="starRating" itemscope itemtype="http://schema.org/Rating">
+                        <p class="name" itemprop="Author">Alex Wood</p>
+                        <p class="rating" itemprop="ratingValue"content="5">★★★★★</p>
+    		                <p class="mb-4" itemprop="description">Everything about this hotel is 5 star, from the warm arrival with a friendly greeting and welcome drink to the gorgeous pool and lounge area to the amazing villas and rooms.</p>
+    		              </div>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
           </div>
-        </section>
-        <br>
+        </div>
+				<span id="section-restaurant"></span>
+      </div>
+    </section> 
+		<br>
+
 		<!-- RESTAURANT -->
 		<section  class="ftco-section ftc-no-pb ftc-no-pt" itemprop="department" itemscope itemtype="http://schema.org/Restaurant">
 			<div class="container">
@@ -365,14 +348,16 @@
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h2>Our Menu</h2>
+						<br>
+						<br>
           </div>
-          <br><br><br><br>
          <div class="row" itemprop="hasMenu" itemscope itemtype="http://schema.org/Menu">
           <div itemprop="hasMenuItem" itemscope itemtype="http://schema.org/MenuItem">
         <div class="row">
         	<div class="col-md-6" >
         		<div class="pricing-entry d-flex ftco-animate">
-        			<img itemprop="photo" src="images/menu-1.jpg" style="background-image: url(images/menu-1.jpg);"></div>
+							<div itemprop="photo" class="img" style="background-image: url(images/menu-1.jpg);"></div>
+        			<!-- <img itemprop="photo" src="images/menu-1.jpg" style="background-image: url(images/menu-1.jpg);"></div> -->
         			<div class="desc pl-3">
 	        			<div class="d-flex text align-items-center">
 	        				<h3><span itemprop="name">Blueberry Cheesecake</span></h3>
@@ -386,7 +371,7 @@
         	</div>
         	<div class="col-md-6">
         		<div class="pricing-entry d-flex ftco-animate">
-        			<div class="img" style="background-image: url(images/menu-6.jpg);"></div>
+        			<div itemprop="photo" class="img" style="background-image: url(images/menu-6.jpg);"></div>
         			<div class="desc pl-3">
 	        			<div class="d-flex text align-items-center">
 	        				<h3><span itemprop="name">Ravioli Marinara</span></h3>
@@ -398,15 +383,15 @@
 	        		</div>
         		</div>
         	</div>
-        </div>
+        </div><span id="section-contact"></span>
         </div>
         </div>
         </div>
     </div>
 		</section>
-		<br>
+		
 		<!-- CONTACT -->
-		<section id="section-contact" class="ftco-section contact-section bg-light">
+		<section class="ftco-section contact-section bg-light">
       <div class="container">
         <div class="row d-flex mb-5 contact-info">
           <div class="col-md-12 mb-4">
