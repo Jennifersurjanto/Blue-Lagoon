@@ -21,6 +21,7 @@
   </head>
   <body itemscope itemtype="http://schema.org/Hotel">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" itemprop="foundingDate" content="23.10.2019">
+		<span itemprop="priceRange" content="$$$"></span>
 	    <div class="container" >
 	      <a href="index.html"><img itemprop="logo" src="images/Blue-Lagoon-Logo.png" alt="Blue Lagoon Logo" style="height:140px"></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +54,7 @@
         </div>
         </div>
       </div>
-      <div class="slider-item" style="background-image:url(images/bg_2.jpg);">
+      <div class="slider-item" style="background-image:url(images/bg_2.jpeg);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -72,8 +73,8 @@
     <section class="ftco-section ftc-no-pb ftc-no-pt">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center"
-                style="background-image: url(images/bg_2.jpg)";>
+					<div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center">
+						<img itemprop="image" src="images/bg_2.png" alt="hotel pic" style="background-image; height:400px">
 					</div>
 					<div class="col-md-7 py-5 wrap-about pb-md-5 ftco-animate">
 	          <div class="heading-section heading-section-wo-line pt-md-5 pl-md-5 mb-5">
@@ -195,16 +196,15 @@
 			<h1 class="mb-4 bread"><center>Rooms</center></h1>
     		<div class="row">
 	        <div class="col-lg-12">
-		    		<div class="row" itemprop="containsPlace" itemscope itemtype="http://schema.org/HotelRoom">
+		    		<div class="row" itemprop="makesOffer" itemscope itemtype="http://schema.org/Offer">
 		    			<div class="col-sm col-md-6 col-lg-4 ftco-animate">
 		    				<div class="room">
 		    					<a href="rooms-single.html" class="img d-flex justify-content-center align-items-center" style="background-image: url(images/room-1.jpg);">
 		    					</a>
 		    					<div class="text p-3 text-center">
-		    						<h3 class="mb-3"><span itemprop="name" >Suite Room</span></h3>
-		    						<p><span itemscope itemtype="http://schema.org/Offer">
+		    						<h3 class="mb-3"><span itemprop="name">Suite Room</span></h3>
+		    						<p>
                       <span class="price mr-2" itemprop="priceCurrency">IDR <span class="price mr-2" itemprop="price"> 7,500,000</span></span><br>
-                      <span itemscope itemtype="http://schema.org/PriceSpecification">
                       <span class="per" itemprop="description">per night</span></span></p>
 		    					</div>
 		    				</div>
@@ -215,9 +215,8 @@
 		    					</a>
 		    					<div class="text p-3 text-center">
 		    						<h3 class="mb-3"><span itemprop="name">Family Room</span></h3>
-										<p><span itemscope itemtype="http://schema.org/Offer">
+										<p>
                       <span class="price mr-2" itemprop="priceCurrency">IDR <span class="price mr-2" itemprop="price"> 5,600,000</span></span><br>
-                      <span itemscope itemtype="http://schema.org/PriceSpecification">
                       <span class="per" itemprop="description">per night</span></span></p>
 		    					</div>
 		    				</div>
@@ -228,9 +227,8 @@
 		    					</a>
 		    					<div class="text p-3 text-center">
 		    						<h3 class="mb-3"><span itemprop="name">Deluxe Room</span></h3>
-										<p><span itemscope itemtype="http://schema.org/Offer">
+										<p>
                       <span class="price mr-2" itemprop="priceCurrency">IDR <span class="price mr-2" itemprop="price"> 2,240,000</span></span><br>
-                      <span itemscope itemtype="http://schema.org/PriceSpecification">
                       <span class="per" itemprop="description">per night</span></span></p>
 		    					</div>
 		    				</div>
@@ -248,7 +246,7 @@
           <div class="col-md-8 ftco-animate">
           	<div class="row ftco-animate">
 		          <div class="col-md-12">
-		            <div class="carousel-testimony owl-carousel ftco-owl" itemprop="review" itemscope itemtype="http://schema.org/Review">
+		            <div class="carousel-testimony owl-carousel ftco-owl" itemprop="starRating" itemscope itemtype="http://schema.org/Rating">
 		              <div class="item">
 		                <div class="testimony-wrap py-4 pb-5">
 		                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
@@ -256,8 +254,8 @@
 		                      <i class="icon-quote-left"></i>
 		                    </span>
 		                  </div>
-											<div class="text text-center" itemprop="starRating" itemscope itemtype="http://schema.org/Rating">
-                        <p class="name" itemprop="Author">Aaron Smith</p>
+											<div class="text text-center">
+                        <p class="name" itemprop="author">Aaron Smith</p>
                         <p class="rating" itemprop="ratingValue" content="5">★★★★★</p>
     		                <p class="mb-4" itemprop="description">I had one of the best time of my life here in Blue Lagoon. Everything was extraordinary. The resort, the food, the beach, the service, all of them were amazing. My wife and I are planning to go to Bali again and we are absolutely going to stay in Blue Lagoon. You will have the best time here and you will not regret it!</p>
     		              </div>
@@ -270,8 +268,8 @@
 		                      <i class="icon-quote-left"></i>
 		                    </span>
 		                  </div>
-											<div class="text text-center" itemprop="starRating" itemscope itemtype="http://schema.org/Rating">
-                        <p class="name" itemprop="Author">Roberto Pieri</p>
+											<div class="text text-center">
+                        <p class="name" itemprop="author">Roberto Pieri</p>
                         <p class="rating" itemprop="ratingValue" content="4">★★★★☆</p>
     		                <p class="mb-4" itemprop="description">Stayed for 4 nights here and wouldn't hesitate to come back. The staff went above and beyond to make us comfortable and were really helpful.</p>
     		              </div>
@@ -284,8 +282,8 @@
     		                      <i class="icon-quote-left"></i>
     		                    </span>
     		                  </div>
-    		                  <div class="text text-center" itemprop="starRating" itemscope itemtype="http://schema.org/Rating">
-                            <p class="name" itemprop="Author">Jim Lahey</p>
+    		                  <div class="text text-center">
+                            <p class="name" itemprop="author">Jim Lahey</p>
                             <p class="rating" itemprop="ratingValue"content="4">★★★★☆</p>
     		                    <p class="mb-4" itemprop="description">I really loved to calm down at Blue Lagoon Bali. It's the perfect place to enjoy wellness-services without gettin interrupted by business calls.</p>
     		                  </div>
@@ -298,8 +296,8 @@
 		                      <i class="icon-quote-left"></i>
 		                    </span>
 		                  </div>
-											<div class="text text-center" itemprop="starRating" itemscope itemtype="http://schema.org/Rating">
-                        <p class="name" itemprop="Author">Alex Wood</p>
+											<div class="text text-center">
+                        <p class="name" itemprop="author">Alex Wood</p>
                         <p class="rating" itemprop="ratingValue"content="5">★★★★★</p>
     		                <p class="mb-4" itemprop="description">Everything about this hotel is 5 star, from the warm arrival with a friendly greeting and welcome drink to the gorgeous pool and lounge area to the amazing villas and rooms.</p>
     		              </div>
@@ -319,13 +317,14 @@
 		<section  class="ftco-section ftc-no-pb ftc-no-pt" itemprop="department" itemscope itemtype="http://schema.org/Restaurant">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-5 p-md-5 img img-2 img-3 d-flex justify-content-center align-items-center" itemprop="image" style="background-image: url(images/about.jpg);">
+					<div class="col-md-5 p-md-5 img img-2 img-3 d-flex justify-content-center align-items-center">
+					<img itemprop="image" src="images/about.jpg" alt="restaurant pic" style="background-image; height:400px">
 					</div>
 					<div class="col-md-7 py-5 wrap-about pb-md-5 ftco-animate">
 	          <div class="heading-section heading-section-wo-line pt-md-4 mb-5">
 	          	<div class="ml-md-0">
-		          	<span class="subheading" itemprop="name">Restaurant Bar</span>
-                <span itemprop="priceRange" content="$$"> </span>
+		          	<span class="subheading" itemprop="name">Blue Lagoon Restaurant & Bar</span>
+                <span itemprop="priceRange" content="$$"></span>
                 <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                   <span itemprop="streetAddress" content="Jl. Villa Blue Lagoon, Ungasan, Kec. Kuta Sel., Kabupaten Badung, Bali"></span>
                   <span itemprop="postalCode" content="80362"></span>
@@ -334,12 +333,9 @@
 		            <h2 class="mb-4">We Are Food Lover</h2>
 	            </div>
 	          </div>
-	          <div class="pb-md-4" itemprop="description">
-							<p>Blue Lagoon offers a various types of cuisine inspired by our favourite <span itemprop="servesCuisine"> European </span> and <span itemprop="servesCuisine"> Asian </span> dishes. The cuisine in Blue Lagoon is made from fresh ingredients and cooked by our greatest chefs. We also have a restaurant with a beach view, a beach club, and a pool lounge. Each of them has their own way to please you.</p>
-							<!-- <p class="pl-md-5"> </p> -->
-							<!-- <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p> -->
+	          <meta class="pb-md-4" itemprop="description">
+							<p>Blue Lagoon offers a various types of cuisine inspired by our favourite <span itemprop="servesCuisine"> European</span> and <span itemprop="servesCuisine">Asian </span> dishes. The cuisine in Blue Lagoon is made from fresh ingredients and cooked by our greatest chefs. We also have a restaurant with a beach view, a beach club, and a pool lounge. Each of them has their own way to please you.</p>
               <span>Phone number for reservations:</span><span itemprop="telephone" content="+623618723199"> +62 361 87231-99 </span>
-            </div>
 					</div>
 				</div>
 			</div>
@@ -353,16 +349,15 @@
           </div>
          <div class="row" itemprop="hasMenu" itemscope itemtype="http://schema.org/Menu">
           <div itemprop="hasMenuItem" itemscope itemtype="http://schema.org/MenuItem">
-        <div class="row">
+        <div class="row" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
         	<div class="col-md-6" >
         		<div class="pricing-entry d-flex ftco-animate">
-							<div itemprop="photo" class="img" style="background-image: url(images/menu-1.jpg);"></div>
-        			<!-- <img itemprop="photo" src="images/menu-1.jpg" style="background-image: url(images/menu-1.jpg);"></div> -->
+							<div><img class="img" itemprop="image" src="images/menu-1.jpg" alt="blueberry cheesecake" style="background-image"></div>
         			<div class="desc pl-3">
-	        			<div class="d-flex text align-items-center">
-	        				<h3><span itemprop="name">Blueberry Cheesecake</span></h3>
-	        				<span class="price" style="font-size:19px">IDR 50K</span>
-	        			</div>
+							<div class="d-flex text align-items-center">
+	        				<h3><span itemprop="name" style="font-size:19px">Blueberry Cheesecake</span></h3>
+	        				<span class="price" style="font-size:19px"> <span itemprop="priceCurrency">IDR</span><span style="font-size:19px" itemprop="price"> 50K</span></span>
+	        		</div>
 	        			<div class="d-block">
 	        				<p itemprop="description">Fresh baked Cheesecake to please body and soul.</p>
 	        			</div>
@@ -371,11 +366,11 @@
         	</div>
         	<div class="col-md-6">
         		<div class="pricing-entry d-flex ftco-animate">
-        			<div itemprop="photo" class="img" style="background-image: url(images/menu-6.jpg);"></div>
+							<div><img class="img" itemprop="image" src="images/menu-6.jpg" alt="ravioli marinara" style="background-image"></div>
         			<div class="desc pl-3">
 	        			<div class="d-flex text align-items-center">
-	        				<h3><span itemprop="name">Ravioli Marinara</span></h3>
-	        				<span class="price" style="font-size:19px">IDR 225K</span>
+	        				<h3><span itemprop="name" style="font-size:19px">Ravioli Marinara</span></h3>
+	        				<span class="price" style="font-size:19px"> <span itemprop="priceCurrency">IDR</span><span style="font-size:19px" itemprop="price"> 225K</span></span>
 	        			</div>
 	        			<div class="d-block">
 	        				<p itemprop="description">Enjoy simplicity in it's purest form.</p>
@@ -401,7 +396,7 @@
           <div class="col-md-3 d-flex">
           	<div class="info bg-white p-4" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 	            <p><span>Address:</span><span itemprop="streetAddress"> <br>
-                Jl. Villa Blue Lagoon, Ungasan, Kec. Kuta Sel., Kabupaten Badung, Bali</span><span itemprop="postalCode">80362</span>, <span itemprop="addressCountry">Indonesia</span></p>
+                Jl. Villa Blue Lagoon, Ungasan, Kec. Kuta Sel., Kabupaten Badung, Bali</span><span itemprop="postalCode"> 80362</span>, <span itemprop="addressCountry">Indonesia</span></p>
 	          </div>
           </div>
           <div class="col-md-3 d-flex" >
@@ -419,13 +414,13 @@
           <div class="col-md-3 d-flex">
           	<div class="info bg-white p-4">
 	            <p><span>Website:</span><br>
-                <span itemprop="url" content="bluelagoonbali.com">bluelagoonbali.com</span></p>
+                <span itemprop="url" content="https://bluelagoonbali.com">bluelagoonbali.com</span></p>
 	          </div>
           </div>
         </div>
           <div class="info bg-white p-4">
             <p><span>You want to know where you can find our Hotel?</span>
-              <a itemprop="hasMap" href="https://goo.gl/maps/iW2qmLAHWJ5Zo9cHA"> Click here for a map.</a>
+              <a itemprop="hasMap" href="https://goo.gl/maps/iW2qmLAHWJ5Zo9cHA" target="_blank"> Click here for a map.</a>
           </div>
           <br>
       </div>
