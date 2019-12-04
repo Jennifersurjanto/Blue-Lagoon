@@ -21,7 +21,7 @@
   </head>
   <body itemscope itemtype="http://schema.org/Hotel">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" itemprop="foundingDate" content="23.10.2019">
-	    <div class="container" >
+	    <div class="container" itemprop="priceRange" content="$$$$">
 	      <a href="index.html"><img itemprop="logo" src="images/Blue-Lagoon-Logo.png" alt="Blue Lagoon Logo" style="height:140px"></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
@@ -31,6 +31,7 @@
 	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
 						<li class="nav-item"><a href="#section-about"  class="nav-link">About</a></li>
 	          <li class="nav-item"><a href="#section-rooms" class="nav-link">Rooms</a></li>
+            <li class="nav-item"><a href="#section-ratings" class="nav-link">Ratings</a></li>
 	          <li class="nav-item"><a href="#section-restaurant" class="nav-link">Restaurant</a></li>
 	          <li class="nav-item"><a href="#section-contact" class="nav-link">Contact</a></li>
 	        </ul>
@@ -74,6 +75,7 @@
 				<div class="row">
 					<div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center"
                 style="background-image: url(images/bg_2.jpg)";>
+                <img itemprop="image" src="images/bg_2.jpg" style="width:1px" alt="Blue Lagoon Bali">
 					</div>
 					<div class="col-md-7 py-5 wrap-about pb-md-5 ftco-animate">
 	          <div class="heading-section heading-section-wo-line pt-md-5 pl-md-5 mb-5">
@@ -224,7 +226,7 @@
 		    			</div>
 		    			<div class="col-sm col-md-6 col-lg-4 ftco-animate">
 		    				<div class="room">
-		    					<a href="rooms-single.html" class="img d-flex justify-content-center align-items-center" style="background-image: url(images/room-3.jpg);">
+		    					<a href="rooms-single.html" class="img d-flex justify-content-center align-items-center" style="background-image: url(images/room-2.jpg);">
 		    					</a>
 		    					<div class="text p-3 text-center">
 		    						<h3 class="mb-3"><span itemprop="name">Deluxe Room</span></h3>
@@ -236,6 +238,7 @@
 		    				</div>
 		    			</div>
 		    		</div>
+            <span id="section-ratings"></span>
 		    	</div>
 		    </div>
     	</div>
@@ -248,7 +251,7 @@
           <div class="col-md-8 ftco-animate">
           	<div class="row ftco-animate">
 		          <div class="col-md-12">
-		            <div class="carousel-testimony owl-carousel ftco-owl" itemprop="review" itemscope itemtype="http://schema.org/Review">
+		            <div class="carousel-testimony owl-carousel ftco-owl">
 		              <div class="item">
 		                <div class="testimony-wrap py-4 pb-5">
 		                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
@@ -279,7 +282,7 @@
 		              </div>
 									<div class="item">
     		                <div class="testimony-wrap py-4 pb-5">
-    		                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+    		                  <div class="user-img mb-4" style="background-image: url(images/person_3.jpg)">
     		                    <span class="quote d-flex align-items-center justify-content-center">
     		                      <i class="icon-quote-left"></i>
     		                    </span>
@@ -312,14 +315,14 @@
         </div>
 				<span id="section-restaurant"></span>
       </div>
-    </section> 
-		<br>
-
+    </section>
+    <br>
 		<!-- RESTAURANT -->
 		<section  class="ftco-section ftc-no-pb ftc-no-pt" itemprop="department" itemscope itemtype="http://schema.org/Restaurant">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-5 p-md-5 img img-2 img-3 d-flex justify-content-center align-items-center" itemprop="image" style="background-image: url(images/about.jpg);">
+					<div class="col-md-5 p-md-5 img img-2 img-3 d-flex justify-content-center align-items-center" style="background-image: url(images/kitchen-2.jpg);">
+            <img itemprop="image" src="images/kitchen_2.jpg" style="width:1px">
 					</div>
 					<div class="col-md-7 py-5 wrap-about pb-md-5 ftco-animate">
 	          <div class="heading-section heading-section-wo-line pt-md-4 mb-5">
@@ -336,8 +339,6 @@
 	          </div>
 	          <div class="pb-md-4" itemprop="description">
 							<p>Blue Lagoon offers a various types of cuisine inspired by our favourite <span itemprop="servesCuisine"> European </span> and <span itemprop="servesCuisine"> Asian </span> dishes. The cuisine in Blue Lagoon is made from fresh ingredients and cooked by our greatest chefs. We also have a restaurant with a beach view, a beach club, and a pool lounge. Each of them has their own way to please you.</p>
-							<!-- <p class="pl-md-5"> </p> -->
-							<!-- <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p> -->
               <span>Phone number for reservations:</span><span itemprop="telephone" content="+623618723199"> +62 361 87231-99 </span>
             </div>
 					</div>
@@ -356,8 +357,7 @@
         <div class="row">
         	<div class="col-md-6" >
         		<div class="pricing-entry d-flex ftco-animate">
-							<div itemprop="photo" class="img" style="background-image: url(images/menu-1.jpg);"></div>
-        			<!-- <img itemprop="photo" src="images/menu-1.jpg" style="background-image: url(images/menu-1.jpg);"></div> -->
+							<div itemprop="image" class="img" style="background-image: url(images/menu-1.jpg);"></div>
         			<div class="desc pl-3">
 	        			<div class="d-flex text align-items-center">
 	        				<h3><span itemprop="name">Blueberry Cheesecake</span></h3>
@@ -371,7 +371,7 @@
         	</div>
         	<div class="col-md-6">
         		<div class="pricing-entry d-flex ftco-animate">
-        			<div itemprop="photo" class="img" style="background-image: url(images/menu-6.jpg);"></div>
+        			<div itemprop="image" class="img" style="background-image: url(images/menu-6.jpg);"></div>
         			<div class="desc pl-3">
 	        			<div class="d-flex text align-items-center">
 	        				<h3><span itemprop="name">Ravioli Marinara</span></h3>
@@ -389,7 +389,7 @@
         </div>
     </div>
 		</section>
-		
+
 		<!-- CONTACT -->
 		<section class="ftco-section contact-section bg-light">
       <div class="container">
@@ -461,7 +461,7 @@
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
               <p itemprop="legalName">Blue Lagune PT PMA</p>
               <p itemprop="taxID">NPWP: 12.345.678.9-101112.131415</p>
-#          </div>
+           </div>
         </div>
       </div>
     </footer>
